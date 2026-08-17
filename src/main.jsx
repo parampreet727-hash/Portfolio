@@ -65,7 +65,7 @@ function App() {
       <header className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-[#070b17]/80 backdrop-blur-xl">
         <nav className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
           <button onClick={() => go("home")} className="focus-ring text-xl font-black tracking-tight" aria-label="Go home">
-            Parampreet<span className="text-indigo-400">.</span>
+            Parampreet Singh<span className="text-indigo-400"></span>
           </button>
           <div className="hidden items-center gap-6 md:flex">
             {nav.map(id => <button key={id} onClick={() => go(id)} className={`focus-ring text-sm capitalize transition ${active === id ? "text-indigo-300" : "text-slate-400 hover:text-white"}`}>{id}</button>)}
@@ -106,7 +106,7 @@ function App() {
         <section id="about" className="px-5 py-24">
           <div className="mx-auto grid max-w-6xl gap-12 md:grid-cols-5 md:items-center">
             <div className="md:col-span-2">
-              <div className="mx-auto flex aspect-square max-w-sm items-center justify-center rounded-3xl border border-white/10 bg-gradient-to-br from-indigo-500/20 via-slate-900 to-cyan-500/10 shadow-2xl shadow-indigo-950/40">
+              <div className="mx-auto flex aspect-square max-w-sm items-center justify-center rounded-3xl border border-white/10 bg-linear-to-br from-indigo-500/20 via-slate-900 to-cyan-500/10 shadow-2xl shadow-indigo-950/40">
                 <div className="text-center"><div className="text-7xl font-black">PS</div><div className="mt-3 text-sm text-slate-500">Frontend Developer</div></div>
               </div>
             </div>
@@ -122,11 +122,11 @@ function App() {
           </div>
         </section>
 
-        <section id="skills" className="border-y border-white/5 bg-white/[.02] px-5 py-24">
+        <section id="skills" className="border-y border-white/5 bg-white/2 px-5 py-24">
           <div className="mx-auto max-w-6xl">
             <SectionHead eyebrow="Skills" title="My technical toolkit"/>
             <div className="mt-10 grid gap-5 md:grid-cols-3">
-              {skillGroups.map(([group, ...items]) => <div key={group} className="rounded-3xl border border-white/10 bg-white/[.03] p-6">
+              {skillGroups.map(([group, ...items]) => <div key={group} className="rounded-3xl border border-white/10 bg-white/3 p-6">
                 <h3 className="font-bold">{group}</h3>
                 <div className="mt-5 flex flex-wrap gap-2">{items.map(x => <span key={x} className="rounded-full border border-white/10 px-3 py-2 text-xs text-slate-300">{x}</span>)}</div>
               </div>)}
@@ -138,7 +138,7 @@ function App() {
           <div className="mx-auto max-w-6xl">
             <SectionHead eyebrow="Projects" title="Selected work"/>
             <div className="mt-10 grid gap-6 md:grid-cols-2">
-              {projects.map(p => <article key={p.title} className="group rounded-3xl border border-white/10 bg-white/[.03] p-6 transition duration-300 hover:-translate-y-1 hover:border-indigo-400/40">
+              {projects.map(p => <article key={p.title} className="group rounded-3xl border border-white/10 bg-white/3 p-6 transition duration-300 hover:-translate-y-1 hover:border-indigo-400/40">
                 <div className="flex items-start justify-between">
                   <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-indigo-500/15 text-lg font-black text-indigo-300">{p.title.slice(0,2)}</div>
                   <a className="focus-ring rounded-full border border-white/10 p-3 text-slate-400 hover:text-white" href={p.live} target="_blank" rel="noreferrer" aria-label={`Open ${p.title}`}><Icon name="external" size={18}/></a>
@@ -154,7 +154,7 @@ function App() {
         </section>
 
         <section id="education" className="px-5 pb-24">
-          <div className="mx-auto max-w-6xl rounded-3xl border border-indigo-400/20 bg-gradient-to-br from-indigo-500/10 to-transparent p-8 md:p-12">
+          <div className="mx-auto max-w-6xl rounded-3xl border border-indigo-400/20 bg-linear-to-br from-indigo-500/10 to-transparent p-8 md:p-12">
             <SectionHead eyebrow="Education & Certifications" title="Academic background"/>
             <h3 className="mt-8 text-2xl font-bold">Punjabi University, Patiala</h3>
             <div className="mt-5 grid gap-3 text-slate-400 md:grid-cols-3">
@@ -189,7 +189,7 @@ function SectionHead({ eyebrow, title, center = false }) {
   return <div className={center ? "text-center" : ""}><p className="text-sm font-bold uppercase tracking-[.2em] text-indigo-400">{eyebrow}</p><h2 className="mt-3 text-4xl font-black tracking-tight md:text-5xl">{title}</h2></div>;
 }
 function Info({ icon, title, text }) {
-  return <div className="rounded-2xl border border-white/10 bg-white/[.03] p-4"><div className="text-indigo-400"><Icon name={icon}/></div><div className="mt-3 font-semibold">{title}</div><div className="mt-1 text-sm text-slate-500">{text}</div></div>;
+  return <div className="rounded-2xl border border-white/10 bg-white/3 p-4"><div className="text-indigo-400"><Icon name={icon}/></div><div className="mt-3 font-semibold">{title}</div><div className="mt-1 text-sm text-slate-500">{text}</div></div>;
 }
 
 createRoot(document.getElementById("root")).render(<App />);
