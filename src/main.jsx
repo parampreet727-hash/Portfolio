@@ -116,7 +116,7 @@ function App() {
               <div className="mt-8 grid gap-4 sm:grid-cols-3">
                 <Info icon="code" title="Frontend" text="React, JavaScript, Tailwind"/>
                 <Info icon="briefcase" title="Workflow" text="Git, Vite, DevTools"/>
-                <Info icon="graduation" title="Education" text="MSc IT + PGDCA"/>
+                <Info icon="graduation" title="Education" text="M.Sc IT + PGDCA"/>
               </div>
             </div>
           </div>
