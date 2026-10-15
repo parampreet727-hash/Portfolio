@@ -24,7 +24,8 @@ const projects = [
 const skillGroups = [
   ["Frontend", "React.js", "JavaScript (ES6+)", "TypeScript", "HTML5", "CSS3", "Tailwind CSS"],
   ["Workflow", "Git", "GitHub", "Vite", "VS Code", "Chrome DevTools"],
-  ["Other", "Responsive Web Design", "SEO Fundamentals", "MongoDB", "Vercel", "Netlify"],
+  ["Database", "MongoDB", "PostgreSQL"],
+  ["Other", "Responsive Web Design", "SEO Fundamentals", "Vercel", "Netlify"],
 ];
 
 function Icon({ name, size = 20 }) {
