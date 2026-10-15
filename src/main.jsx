@@ -171,7 +171,7 @@ function App() {
           <div className="mx-auto max-w-3xl text-center">
             <SectionHead eyebrow="Contact" title="Let's build something great." center />
             <p className="mx-auto mt-5 max-w-xl leading-7 text-slate-400">I'm looking for opportunities to grow as a frontend developer and contribute to modern web products.</p>
-            <a href="mailto:Parampreetdhatt410@gmail.com" className="focus-ring mt-8 inline-flex items-center gap-2 rounded-full bg-indigo-500 px-7 py-4 font-semibold hover:bg-indigo-400"><Icon name="mail" size={18}/> Email Me</a>
+            <a href="mailto:Parampreet727@gmail.com" className="focus-ring mt-8 inline-flex items-center gap-2 rounded-full bg-indigo-500 px-7 py-4 font-semibold hover:bg-indigo-400"><Icon name="mail" size={18}/> Email Me</a>
             <p className="mt-5 text-sm text-slate-500">Chandigarh, India • 87290-99410</p>
           </div>
         </section>
